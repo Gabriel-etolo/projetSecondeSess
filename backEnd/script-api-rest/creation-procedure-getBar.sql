@@ -1,4 +1,4 @@
-ALTER PROCEDURE "DBA"."getBar"()
+CREATE PROCEDURE "DBA"."getBar"()
 result(nom char(50), prix char(3))
 BEGIN
 call sa_set_http_header('Content-Type', 'application:json; charset=utf-8');	
