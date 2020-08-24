@@ -1,0 +1,30 @@
+img{
+width: 150px;
+height: 150px;}
+.log{float:left;}
+.bjr{ line-height:200px;
+text-align:center;font-family: 'Sofia';
+font-size: 100px;
+}
+.avert{
+	text-align:right;
+	
+}
+.pres{text-align:center;}
+.bouton {
+  background-color: #0295C2;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+.bouton:hover {
+  background-color: #006686;
+  color: white;
+}
+#aide{text-align:right;}
