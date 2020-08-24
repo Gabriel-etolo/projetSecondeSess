@@ -6,3 +6,5 @@ select nomId
 from tbNom
 where tbNom.nom = nomBar;
 end;
+CREATE SERVICE "Coordonnes" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getCoordonnes(:id);
+	
