@@ -23,23 +23,31 @@
 <div id="aide">
 <a href="https://aide-alcool.be/accompagnement-pour-sortir-de-l-alcool"><p>Si vous avez des problemes d'addiction cliquez sur ce lien</p></a></div></header><hr>
 <article>
-<p>Combien de fois buvez vous par mois ?</p>
-<label for="nbBoire">nombre de fois par mois: </label>                                          
-    <input id="nbBoire" name="boire" type="number" min="0" max="31" step="1" required><br>
-	
-	<p id="cbFois"></p>
+<form id="boire" action=# onSubmit='return CbfoisBoire(this);'>
+  <fieldset>
+    <legend>Combien de fois allez-vous dans des bars par semaine?</legend>
+    <label for="nbfois">Nombre de fois : </label>                                          
+    <input id="boir" name="boir" type="number" min="0" max="7" step="1" required><br> 
+    <input type="submit">
+  </fieldset>
+</form>
+	<div id="cbFois"></div>
 </article>
 <article>
 <p> Cliquez sur un bouton pour choisir d'afficher tous les bars ou selectionnez une commune</p>
 <button type="button" class="bouton" onclick="rempPage()">afficher tous les bars</button>
-<button type="button" class="bouton" onclick="">1030</button>
-<button type="button" class="bouton" onclick="">1050</button>
-<button type="button" class="bouton" onclick="">1060</button>
-<button type="button" class="bouton" onclick="">1070</button>
-<button type="button" class="bouton" onclick="">1082</button>
-<button type="button" class="bouton" onclick="">1140</button>
-<button type="button" class="bouton" onclick="">1200</button>
+<button type="button" class="bouton" onclick="">Schaerbeek</button>
+<button type="button" class="bouton" onclick="">Ixelles</button>
+<button type="button" class="bouton" onclick="">Saint-gilles</button>
+<button type="button" class="bouton" onclick="">Anderlecht</button>
+<button type="button" class="bouton" onclick="">Berchem-Sainte-Agathe</button>
+<button type="button" class="bouton" onclick="">Evere</button>
+<button type="button" class="bouton" onclick="">Woluwe-Saint-Lambert</button>
 </article>
 <article>
 <div id="result"></div>
+<div id="information"></div>
+<div><button type="bouton" class="ajavis" onclick="ajouterAvis()">Cliquez ici pour ajouter un avis</button></div>
+<div><button type="bouton" class="ajavis" onclick="fermerAvis()">Cliquez ici pour fermer la partie avis</button></div>
+<div id="avis"></div>
 </html>
