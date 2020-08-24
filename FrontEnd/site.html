@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<script src="js/jsBar.js"></script>
+<title>Bruxelles-Bars</title>
+</head>
+<body>
+<div id="bloc_page">
+<header>
+<div id="titre">
+<div id="logo">
+<p class="log">
+<img src="img/logo.jpg" alt="logo bar" />
+</p>
+
+<h1 class="bjr">Bruxelles-bars</h1>
+<h3 class="pres">le site n°1 pour trouver le bar qui vous convient</h3>
+<p class="avert">*l'abus d'alcool nuit à la santé</p>
+</div>
+</div>
+<div id="aide">
+<a href="https://aide-alcool.be/accompagnement-pour-sortir-de-l-alcool"><p>Si vous avez des problemes d'addiction cliquez sur ce lien</p></a></div></header><hr>
+<article>
+<p>Combien de fois buvez vous par mois ?</p>
+<label for="nbBoire">nombre de fois par mois: </label>                                          
+    <input id="nbBoire" name="boire" type="number" min="0" max="31" step="1" required><br>
+	
+	<p id="cbFois"></p>
+</article>
+<article>
+<p> Cliquez sur un bouton pour choisir d'afficher tous les bars ou selectionnez une commune</p>
+<button type="button" class="bouton" onclick="rempPage()">afficher tous les bars</button>
+<button type="button" class="bouton" onclick="">1030</button>
+<button type="button" class="bouton" onclick="">1050</button>
+<button type="button" class="bouton" onclick="">1060</button>
+<button type="button" class="bouton" onclick="">1070</button>
+<button type="button" class="bouton" onclick="">1082</button>
+<button type="button" class="bouton" onclick="">1140</button>
+<button type="button" class="bouton" onclick="">1200</button>
+</article>
+<article>
+<div id="result"></div>
+</html>
